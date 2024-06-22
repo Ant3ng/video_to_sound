@@ -1,0 +1,26 @@
+Poetry with pyenvの方法？
+
+https://zenn.dev/hiroga/articles/poetry-env-cannot-use-python3_10
+https://sig9.org/archives/2467
+https://stackoverflow.com/a/71083295
+
+・pyenv install 3.10
+・pyenv local 3.10.1
+・poetry config virtualenvs.in-project true
+・poetry env use python3.10
+・poetry update
+
+poetry env infoのSystemは変わらずhomebrew
+
+--- --- --- --- --- --- ---
+以下はGlobalでやっておく
+・pyenv install 3.10
+・poetry config virtualenvs.in-project true
+
+上記ができれば、以下だけでいけるっぽい？
+・pyenv local 3.10.1
+・poetry update（installではなくupdateが重要なのかな？？ poetry.lockがある時のみ）
+
+
+あとは以下をやっておくこと
+brew install ffmpeg
