@@ -1,5 +1,4 @@
 - how to setup env
-    - pyenv install 3.10
     - poetry config virtualenvs.in-project true
     - pyenv install 3.10
     - pyenv local 3.10
