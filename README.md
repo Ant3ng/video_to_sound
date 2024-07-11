@@ -1,0 +1,13 @@
+- how to setup env
+    - pyenv install 3.10
+    - poetry config virtualenvs.in-project true
+    - pyenv install 3.10
+    - pyenv local 3.10
+    - poetry env use $(pyenv which python3)
+    - pyenv install --sync
+    - and, `brew install ffmpeg`
+
+- reference
+    - https://zenn.dev/hiroga/articles/poetry-env-cannot-use-python3_10
+    - https://sig9.org/archives/2467
+    - https://stackoverflow.com/a/71083295
